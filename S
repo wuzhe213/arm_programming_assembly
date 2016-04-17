@@ -1,0 +1,16 @@
+
+startup.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+08000000 <isr_table>:
+ 8000000:	20020000 	.word	0x20020000
+ 8000004:	0800000d 	.word	0x0800000d
+ 8000008:	0800000f 	.word	0x0800000f
+
+0800000c <Reset_Handler>:
+ 800000c:	2003      	movs	r0, #3
+
+0800000e <Default_Handler>:
+ 800000e:	e7fe      	b.n	800000e <Default_Handler>
