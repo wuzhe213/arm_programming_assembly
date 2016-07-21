@@ -10,12 +10,12 @@ Two, I don't see anybody seriously did it. So, it's a true learning. <br>
 
 
 Environment: <br>
-os: mac os x 10.9.5 <br>
+> os: mac os x 10.9.5 <br>
 board: stm32f4-discovery,ver MB997D, with stm32f407VGT6 <br>
 toolchain: arm-none-eabi <br>
 
 To install arm toolchain on MAC, use the commands below: <br>
-brew tap PX4/homebrew-px4 <br>
+> brew tap PX4/homebrew-px4 <br>
 brew update <br>
 brew install gcc-arm-none-eabi <br>
 
