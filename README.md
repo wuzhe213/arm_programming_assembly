@@ -15,13 +15,24 @@ board: stm32f4-discovery,ver MB997D, with stm32f407VGT6 <br>
 toolchain: arm-none-eabi <br>
 
 To install arm toolchain on MAC, use the commands below: <br>
-> brew tap PX4/homebrew-px4 <br>
-brew update <br>
-brew install gcc-arm-none-eabi <br>
+```bash
+brew tap PX4/homebrew-px4 
+brew update 
+brew install gcc-arm-none-eabi
+```
+
+Install st-link on MACOS
+```bash
+brew st-link
+```
 
 stm32f405.ld is from micropython project with no change. <br>
 startup.s is also from micropython's file startup_stm32.S, but simplified to less than 20 lines. <br>
 Some lines in Makefile is copyed from micropython's minimal directory. <br>
 
+# Write to board
+```bash
+st-flash write startup.elf 0x08000000
+```
 
 
