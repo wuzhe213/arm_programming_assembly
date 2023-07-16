@@ -23,7 +23,7 @@ brew install gcc-arm-none-eabi
 
 Install st-link on MACOS
 ```bash
-brew st-link
+brew install st-link
 ```
 
 stm32f405.ld is from micropython project with no change. <br>
